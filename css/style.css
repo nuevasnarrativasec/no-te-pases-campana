@@ -225,7 +225,7 @@ img.linea-movil{
         height: 100vh;
     }
         .ctn-header{
-            top: 45%;
+            top: 43%;
             width: 90%;
         }
             .logo-comercio{
@@ -237,11 +237,15 @@ img.linea-movil{
             .ctn-logo-campana img{
                 display: block;
                 margin: 5px auto;
+                max-width: 160px;
             }
             .ctn-logo-campana h1{
                 display: block;
                 margin: 10px auto;
             }
+    .box-denuncia{
+        margin: 40px auto;
+    }
     .box-abridor iframe{
         max-width: 90%;
     }
