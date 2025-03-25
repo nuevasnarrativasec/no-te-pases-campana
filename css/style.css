@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'prelo_slabmedium';
+    src: url('../fonts/preloslab-medium-webfont.woff2') format('woff2'),
+         url('../fonts/preloslab-medium-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'prelo_slabblack_italic';
+    src: url('../fonts/preloslab-black_italic-webfont.woff2') format('woff2'),
+         url('../fonts/preloslab-black_italic-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'prelobook';
+    src: url('../fonts/Prelo-Book-webfont.woff2') format('woff2'),
+         url('../fonts/Prelo-Book-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'prelobold';
+    src: url('../fonts/Prelo-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/Prelo-Bold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'preloblack';
+    src: url('../fonts/Prelo-Black-webfont.woff2') format('woff2'),
+         url('../fonts/Prelo-Black-webfont.woff') format('woff');
+}
+
+.clear{
+    clear: both;
+}
+
+body, html {    
+    margin: 0;    
+    padding: 0;    
+    font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main-header{
+    background: url('../img/bg-portada.jpg') no-repeat center top;
+    background-size: cover;
+    height: 95vh;
+    position: relative;
+    width: 100%;
+}
+    .ctn-header{
+        left: 50%;
+        position: absolute;
+        top: 40%;        
+        transform: translate(-50%, -50%);
+    }
+        .logo-comercio{
+            display: block;
+            margin: 0 auto;
+            max-width: 130px;
+        }
+        .ctn-logo-campana{
+
+        }
+            .ctn-logo-campana img{
+                display: inline-block;
+                margin: 0 10px;
+                max-width: 190px;
+                vertical-align: top;
+            }
+            .box-titulo{
+                display: inline-block;
+                max-width: 320px;
+                vertical-align: top;
+            }
+                .box-titulo h1{
+                    color: #fff;
+                    display: inline-block;
+                    font: 3rem/1 'prelo_slabblack_italic';
+                    margin: 15px 0;
+                    text-transform: uppercase;
+                    vertical-align: top;
+                }
+                .box-titulo h2{
+                    color: #fff;
+                    font: 1.1rem/1.3 'prelobold';
+                    margin: 0 auto;
+                    text-shadow: 0px 0px 9px #000000;
+                }
+            .box-auspicio{
+                text-align: center;
+            }
+                .box-auspicio p{
+                    color: #fff;
+                    display: inline-block;
+                    font:  1.1rem/1 'prelobold';
+                    text-transform: uppercase;
+                    vertical-align: top;
+                }
+                .box-auspicio img{
+                    display: inline-block;
+                    vertical-align: top;
+                }
+.box-denuncia{
+    border: 8px solid #AF0F23;
+    box-sizing: border-box;
+    margin: 80px auto 40px;
+    max-width: 290px;
+    padding: 15px 20px;
+    text-align: center;
+}
+    .box-denuncia p{
+        color: #AF0F23;
+        font: 1.1rem/1 'prelobold';
+        margin: 0 auto;
+        text-transform: uppercase;
+    }
+    .box-denuncia h3{
+        color: #AF0F23;
+        font: 2.5rem/1.1 'preloblack';
+        margin: 0 auto;
+    }
+p.intro{
+    font: 1rem/1.5 'prelobook';
+    margin: 0 auto 80px;
+    max-width: 330px;
+}
+    p.intro b{
+        font-family: 'prelobold';
+    }
+.box-abridor{
+    margin: 0 auto 40px;
+    text-align: center;
+}
+    .box-iframe{
+        display: inline-block;
+        max-width: 330px;
+        vertical-align: top;
+    }
+    .box-abridor img{
+        display: inline-block;
+        margin-left: -80px;      
+        max-width: 230px;
+        vertical-align: bottom;        
+    }
+    .info-box-abridor{
+        display: inline-block;
+        margin-left: -50px;
+        max-width: 255px;
+        padding-bottom: 200px;
+        text-align: left;
+        vertical-align: bottom;
+    }
+        .info-box-abridor h3{
+            font: 2.5rem/1 'prelo_slabblack_italic';
+            margin: 0 auto 10px;
+        }
+        .info-box-abridor p{
+            font: 1.1rem/1.3 'prelobook';
+            margin: 0 auto;
+        }
+            .info-box-abridor p a{
+                background-color: #AF0F23;
+                color: #fff;
+                font-family: 'prelobold';
+                padding: 0 5px;
+                text-decoration: none;
+            }
+            .info-box-abridor p span{
+                font-family: 'prelobold';
+            }
+img.linea-movil{
+    display: none;
+}
+.box-notas{
+    margin: 30px auto;
+    max-width: 880px;
+    text-align: center;
+}
+    .box-notas h3,
+    .box-reels h3{
+        color: #A79142;
+        font: 1rem/1.1 'preloblack';
+        padding: 0 20px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    .nota{
+        display: inline-block;
+        margin: 0 15px 20px;
+        max-width: 260px;
+        vertical-align: top;
+    }
+        .nota img{
+
+        }
+        .nota h4{
+            font: 1rem/1.3 'prelo_slabmedium';
+            margin: 5px auto;     
+            text-align: left;       
+        }
+            .nota h4 a{
+                color: #000;
+                text-decoration: none;
+            }
+                .nota h4 a:hover{
+                    text-decoration: underline;
+                }
+.box-reels{
+
+    border-bottom: 1px solid #c2c2c2;
+    border-top: 1px solid #c2c2c2;
+    margin: 90px auto;
+    max-width: 1200px;
+    padding: 50px 0;
+    text-align: center;
+}
+    .box-reels .box-iframe{
+        max-width: 285px;
+    }
+    .box-reels iframe{
+        min-width: 100% !important;
+        width: 100% !important;        
+    }
+
+@media only screen and (max-width: 640px) {
+
+    .main-header{
+        height: 100vh;
+    }
+        .ctn-header{
+            top: 45%;
+            width: 90%;
+        }
+            .logo-comercio{
+                margin: 0 auto 20px;
+            }
+            .ctn-logo-campana{
+                text-align: center;
+            }
+            .ctn-logo-campana img{
+                display: block;
+                margin: 5px auto;
+            }
+            .ctn-logo-campana h1{
+                display: block;
+                margin: 10px auto;
+            }
+    .box-abridor iframe{
+        max-width: 90%;
+    }
+    .box-abridor img{
+        display: none;
+    }
+    .info-box-abridor{
+        margin: 30px auto;
+        max-width: 90%;
+        padding-bottom: 0;        
+    }
+    img.linea{
+        display: none;
+    }
+    img.linea-movil{
+        display: block;
+    }
+    .nota{
+        max-width: 90%;
+    }
+
+}
+
+@media only screen and (max-height: 732px) {
+   
+    .main-header {
+        height: 100vh;
+        background-position-y: -80px;
+    }
+
+}
