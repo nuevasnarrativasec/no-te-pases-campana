@@ -102,10 +102,18 @@ body, html {
     border: 8px solid #AF0F23;
     box-sizing: border-box;
     margin: 80px auto 40px;
-    max-width: 290px;
+    max-width: 320px;
     padding: 15px 20px;
     text-align: center;
 }
+    .box-denuncia a img{
+        text-decoration: none;
+    }
+    .box-denuncia img{
+        display: inline-block;
+        max-width: 40px;
+        vertical-align: top;        
+    }
     .box-denuncia p{
         color: #AF0F23;
         font: 1.1rem/1 'prelobold';
@@ -114,9 +122,15 @@ body, html {
     }
     .box-denuncia h3{
         color: #AF0F23;
+        display: inline-block;        
         font: 2.5rem/1.1 'preloblack';
         margin: 0 auto;
+        vertical-align: bottom;
     }
+        .box-denuncia h3 a{
+            color: #AF0F23;
+            text-decoration: none;
+        }
 p.intro{
     font: 1rem/1.5 'prelobook';
     margin: 0 auto 80px;
