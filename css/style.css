@@ -85,17 +85,19 @@ body, html {
                     text-shadow: 0px 0px 22px #000000;
                 }
             .box-auspicio{
-                text-align: center;
+                text-align: left;
             }
                 .box-auspicio p{
                     color: #fff;
                     display: inline-block;
                     font: 0.8rem/1 'prelobold';
+                    padding-bottom: 20px;
                     text-transform: uppercase;
-                    vertical-align: top;
+                    vertical-align: bottom;
                 }
                 .box-auspicio img{
                     display: inline-block;
+                    max-width: 85px;
                     vertical-align: top;
                 }
 .box-denuncia{
@@ -236,7 +238,10 @@ img.linea-movil{
 
 @media only screen and (max-width: 640px) {
 
-    .main-header{
+    body .main-header{
+        background: url(../img/bg-portada-movil.jpg) no-repeat center top;
+        background-position: inherit;
+        background-size: cover;
         height: 100vh;
     }
         .ctn-header{
@@ -281,6 +286,14 @@ img.linea-movil{
     .nota{
         max-width: 90%;
     }
+    .box-auspicio{
+        text-align: center;
+    }
+        .box-auspicio img{
+            display: inline-block;            
+            max-width: 85px;
+            vertical-align: top;
+        }
 
 }
 
