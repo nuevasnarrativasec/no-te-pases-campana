@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTP</title>
 
-    <link rel="stylesheet" href="https://nuevasnarrativasec.github.io/no-te-pases-campana/css/style.css?v10">
+    <link rel="stylesheet" href="../css/style.css?v10">
 </head>
 <body>
+
+    <header>
+        <div class="header-comercio">
+            <div class="ctn-header-comercio">                
+                <div id="social">
+                    <button id="fb" class="sharer button" data-sharer="facebook" data-hashtag="" data-url="https://elcomercio.pe/papeletas-ciudadanas-transito-reportes/">Facebook</button>
+
+                    <button id="wst" class="sharer button" data-sharer="whatsapp" data-title="El Comercio" data-url="https://elcomercio.pe/papeletas-ciudadanas-transito-reportes/">Whatsapp</button>
+
+                    <button id="tw" class="sharer button" data-sharer="twitter" data-title="El Comercio" data-hashtags="" data-via='elcomercio_peru' data-url="https://elcomercio.pe/papeletas-ciudadanas-transito-reportes/">Twitter</button>
+                </div>
+            </div>            
+        </div>        
+    </header>
 
     <div class="main-header">
         <div class="ctn-header">            
@@ -178,6 +192,43 @@
             </h4>
         </div>
     </div>
+
+
+    <!-- compartir -->
+    <script>
+        function shareUrl(event) {
+            const button = event.target;
+            const url = button.getAttribute('data-url');
+            
+            const sharer = button.getAttribute('data-sharer');
+            let shareUrl = '';
+
+            switch (sharer) {
+            case 'facebook':
+                const fbHashtag = button.getAttribute('data-hashtag') || '';
+                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&hashtag=${encodeURIComponent(fbHashtag)}`;
+                break;
+                
+            case 'whatsapp':
+                const whatsappTitle = button.getAttribute('data-title');
+                shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(whatsappTitle + ' ' + url)}`;
+                break;
+                
+            case 'twitter':
+                const twitterTitle = button.getAttribute('data-title');
+                const twitterHashtags = button.getAttribute('data-hashtags');
+                const twitterVia = button.getAttribute('data-via');
+                shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(twitterTitle)}&url=${encodeURIComponent(url)}&hashtags=${twitterHashtags}&via=${twitterVia}`;
+                break;
+            }
+
+            window.open(shareUrl, '_blank');
+        }
+
+        document.querySelectorAll('.sharer').forEach(button => {
+            button.addEventListener('click', shareUrl);
+        });
+    </script>
     
 </body>
 </html>

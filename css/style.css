@@ -28,6 +28,84 @@
     clear: both;
 }
 
+#header{
+    margin-bottom: 50px;
+    width: 100%;
+}
+    .header-comercio{   
+        background: #000;    
+        position: relative;
+        width: 100%;
+        z-index: 9999999;
+    }
+        .ctn-header-comercio{
+            margin: 0 auto;     
+            max-width: 1024px;
+            padding: 0 5px;
+            text-align: right;
+        }
+            .ctn-header-comercio a{
+                display: inline-block;                
+                text-indent: -9999px;
+            }
+                a.logo-comercio{
+                    background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/somos-35-anos-mejores-portadas-ecpm/img/logo-comercio.png?v2) no-repeat 0 0;
+                    background-size: 100%;
+                    display: none;
+                    height: 30px;
+                    margin-top: 10px;
+                    width: 110px;
+                }
+                #social{
+                        float: right;
+                        margin: 20px;
+                        position: absolute;
+                        right: 0;
+                        z-index: 600;
+                }
+                #social ul{
+                    display: inline-block;
+                    margin: 0 auto;
+                    padding: 0;
+                    vertical-align: middle;
+                }
+                    #social ul li{
+                        display: inline-block;
+                        margin: 0 3px;
+                        vertical-align: middle;
+                    }
+                        #social ul li a{
+                            height: 36px;
+                            width: 36px;
+                        }
+                        #fb{
+                            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/fb-icon.png?v2) no-repeat 0 0;
+                            background-size: 100% !important;
+                            border: none;
+                            display: inline-block;
+                            height: 36px;
+                            text-indent: -9999px;
+                            width: 36px;
+                        }
+                        #wst{                
+                            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/wsp-icon.png?v2) no-repeat 0 0 !important;
+                            background-size: 100% !important;
+                            border: none;
+                            display: none;
+                            height: 36px;
+                            text-indent: -9999px;
+                            width: 36px;
+                        }
+                        #tw{            
+                            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/tw-icon.png?v2) no-repeat 0 0 !important;
+                            background-size: 100% !important;
+                            border: none;
+                            display: inline-block;
+                            height: 36px;
+                            text-indent: -9999px;
+                            width: 36px;
+                        } 
+
 body, html {    
     margin: 0;    
     padding: 0;    
@@ -240,6 +318,10 @@ img.linea-movil{
     }
 
 @media only screen and (max-width: 640px) {
+
+    #wst{
+        display: inline-block;
+    }
 
     body .main-header{
         background: url(https://nuevasnarrativasec.github.io/no-te-pases-campana/img/bg-portada-movil.jpg) no-repeat center top;
