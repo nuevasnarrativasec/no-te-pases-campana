@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'prelo_slabmedium';
-    src: url('../fonts/preloslab-medium-webfont.woff2') format('woff2'),
-         url('../fonts/preloslab-medium-webfont.woff') format('woff');
+    src: url('https://nuevasnarrativasec.github.io/no-te-pases-campana/fonts/preloslab-medium-webfont.woff2') format('woff2'),
+         url('https://nuevasnarrativasec.github.io/no-te-pases-campana/fonts/preloslab-medium-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'prelo_slabblack_italic';
-    src: url('../fonts/preloslab-black_italic-webfont.woff2') format('woff2'),
-         url('../fonts/preloslab-black_italic-webfont.woff') format('woff');
+    src: url('https://nuevasnarrativasec.github.io/no-te-pases-campana/fonts/preloslab-black_italic-webfont.woff2') format('woff2'),
+         url(https://nuevasnarrativasec.github.io/no-te-pases-campana/fonts/preloslab-black_italic-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'prelobook';
-    src: url('../fonts/Prelo-Book-webfont.woff2') format('woff2'),
-         url('../fonts/Prelo-Book-webfont.woff') format('woff');
+    src: url('https://nuevasnarrativasec.github.io/no-te-pases-campana/fonts/Prelo-Book-webfont.woff2') format('woff2'),
+         url('https://nuevasnarrativasec.github.io/no-te-pases-campana/fonts/Prelo-Book-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'prelobold';
-    src: url('../fonts/Prelo-Bold-webfont.woff2') format('woff2'),
-         url('../fonts/Prelo-Bold-webfont.woff') format('woff');
+    src: url('https://nuevasnarrativasec.github.io/no-te-pases-campana/fonts/Prelo-Bold-webfont.woff2') format('woff2'),
+         url('https://nuevasnarrativasec.github.io/no-te-pases-campana/fonts/Prelo-Bold-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'preloblack';
-    src: url('../fonts/Prelo-Black-webfont.woff2') format('woff2'),
-         url('../fonts/Prelo-Black-webfont.woff') format('woff');
+    src: url('https://nuevasnarrativasec.github.io/no-te-pases-campana/fonts/Prelo-Black-webfont.woff2') format('woff2'),
+         url('https://nuevasnarrativasec.github.io/no-te-pases-campana/fonts/Prelo-Black-webfont.woff') format('woff');
 }
 
 .clear{
@@ -38,7 +38,7 @@ body, html {
 }
 
 .main-header{
-    background: url('../img/bg-portada-2.jpg') no-repeat center top;
+    background: url('https://nuevasnarrativasec.github.io/no-te-pases-campana/img/bg-portada-2.jpg') no-repeat center top;
     background-size: cover;
     height: 95vh;
     position: relative;
@@ -242,7 +242,7 @@ img.linea-movil{
 @media only screen and (max-width: 640px) {
 
     body .main-header{
-        background: url(../img/bg-portada-movil.jpg) no-repeat center top;
+        background: url(https://nuevasnarrativasec.github.io/no-te-pases-campana/img/bg-portada-movil.jpg) no-repeat center top;
         background-position: inherit;
         background-size: cover;
         height: 100vh;
