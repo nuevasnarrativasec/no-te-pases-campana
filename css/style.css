@@ -380,7 +380,8 @@ img.linea-movil{
             vertical-align: top;
         }
     .box-reels .box-iframe {
-        max-width: 98%;
+        max-width: inherit;
+        width: 95%;
     }
 
 }
