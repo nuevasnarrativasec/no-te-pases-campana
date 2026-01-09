@@ -36,7 +36,7 @@
         background: #000;    
         position: relative;
         width: 100%;
-        z-index: 9999999;
+        z-index: 1;
     }
         .ctn-header-comercio{
             margin: 0 auto;     
