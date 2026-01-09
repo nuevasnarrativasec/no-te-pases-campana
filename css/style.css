@@ -379,6 +379,9 @@ img.linea-movil{
             max-width: 85px;
             vertical-align: top;
         }
+    .box-reels .box-iframe {
+        max-width: 98%;
+    }
 
 }
 
